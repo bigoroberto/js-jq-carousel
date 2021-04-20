@@ -1,0 +1,72 @@
+/* regole globali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato';
+}
+
+/* CONTAINER */
+.container{
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  height: 100vh;
+}
+
+.slide-wrapper{
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 80%;
+}
+
+.slide-wrapper .container-images{
+  height: 100%;
+  text-align: center;
+}
+
+.slide-wrapper .container-images img{
+    display: none;
+    height: 100%;
+    width: 90%;
+}
+
+.slide-wrapper .container-images img.active{
+  display: inline-block;
+}
+
+.arrow-left, .arrow-right {
+  position: absolute;
+  color: black;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.arrow-right {
+  left: auto;
+  right: 0;
+}
+
+.nav {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.7);
+
+}
+
+.nav a i {
+  margin: 0 20px;
+  color: white;
+}
+.nav > a i.active {
+  color: blue;
+}
+
